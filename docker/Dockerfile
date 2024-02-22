@@ -8,9 +8,11 @@ WORKDIR /opt/simple-http-server
 #COPY requirements.txt ./
 #RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia o script Python e o arquivo HTML para o contêiner
-COPY httpd.py .
+# Copia o script e o arquivo HTML para o contêiner
+
 COPY index.html .
+
+COPY httpd.py .
 
 # Expõe a porta em que o aplicativo será executado
 EXPOSE 3002

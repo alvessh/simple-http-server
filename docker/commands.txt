@@ -3,3 +3,4 @@ docker build -t simple-http-server .
 
 docker run -d -p 3002:3002 simple-http-server
 
+sudo docker build -f docker/Dockerfile -t simple-http-server .
