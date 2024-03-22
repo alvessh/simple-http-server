@@ -1,3 +1,6 @@
+##Download and install
+## https://docs.docker.com/engine/install/ubuntu/
+
 docker build -t simple-http-server .
 
 
